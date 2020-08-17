@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata: 
+  name: webserver
+  labels:
+    team: opeational
+    environment: development
+  annotations: 
+    description: ini adalah aplikasi untuk tim operational.
+    cara_penggunaan: gunakan dengan baik dan bijak.......
+spec:
+  containers:
+    - name: nginx
+      image: nginx
+      ports:
+        - containerPort: 80
+
